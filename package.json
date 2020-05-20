@@ -10,11 +10,23 @@
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
+    "builder",
     "tutorial",
     "demo"
   ],
+  "build": {
+    "win": {
+      "target": [
+        {
+          "target": "msi",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "private": true,
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
